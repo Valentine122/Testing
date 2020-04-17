@@ -22,12 +22,12 @@ public class HouseManagerTest extends BaseHouseManager {
 
 
     @Test
-    public void testFindStuffForBarOfGlass() {
-        List<AbstractHouse> thingsOfWidthAndLengthInCentimeters = houseManager.findThingForHouseByWidthAndLengthInCentimeters(203);
-        Assertions.assertEquals(4, thingsOfWidthAndLengthInCentimeters.size());
-        Assertions.assertEquals(243, thingsOfWidthAndLengthInCentimeters.get(0).getPriceInUAH());
-        Assertions.assertEquals(253, thingsOfWidthAndLengthInCentimeters.get(1).getPriceInUAH());
-        Assertions.assertEquals(289, thingsOfWidthAndLengthInCentimeters.get(2).getPriceInUAH());
-        Assertions.assertEquals(359, thingsOfWidthAndLengthInCentimeters.get(3).getPriceInUAH());
+    public void testThingForHouseByMaterial() {
+        List<AbstractHouse> thingForHouseByMaterial = houseManager.findThingForHouseByMaterial(203);
+        Assertions.assertEquals(4, thingForHouseByMaterial.size());
+        Assertions.assertEquals(243, thingForHouseByMaterial.get(0).getPriceInUAH());
+        Assertions.assertEquals(253, thingForHouseByMaterial.get(1).getPriceInUAH());
+        Assertions.assertEquals(289, thingForHouseByMaterial.get(2).getPriceInUAH());
+        Assertions.assertEquals(359, thingForHouseByMaterial.get(3).getPriceInUAH());
     }
 }

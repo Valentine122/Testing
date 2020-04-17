@@ -5,13 +5,14 @@ import static org.junit.jupiter.api.Assertions.fail;
 import org.junit.jupiter.api.Test;
 
 public class HouseManagerUtilsTest extends BaseHouseManager {
+
     @Test
-    public void testSortThingForHouseByWidthAndLengthInCentimeters() {
+    public void testSortThingForHouseByMaterial() {
         fail("Not yet implemented");
     }
 
     @Test
-    public void testSortThingForHouseByPriceAndMaterial() {
+    public void testSortThingForHouseByPrice() {
         fail("Not yet implemented");
     }
 }

@@ -6,9 +6,9 @@ import ua.lviv.iot.thingForHouse.model.AbstractHouse;
 import ua.lviv.iot.thingForHouse.model.SortType;
 
 public class HouseManagerUtils {
-    public static void sortThingForHouseByWidthAndLengthInCentimeters(List<AbstractHouse> stuffs, SortType sortType) {
+    public static void sortThingForHouseByMaterial(List<AbstractHouse> stuffs, SortType sortType) {
     }
 
-    public static void sortThingForHouseByPriceAndMaterial(List<AbstractHouse> stuffs, SortType sortType) {
+    public static void sortThingForHouseByPrice(List<AbstractHouse> stuffs, SortType sortType) {
     }
 }

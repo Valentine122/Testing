@@ -15,13 +15,13 @@ public class HouseManager {
         this.things.add(thing);
     }
 
-    public List<AbstractHouse> findThingForHouseByWidthAndLengthInCentimeters(int priceInUAH) {
-        List<AbstractHouse> thingsOfWidthAndLengthInCentimeters = new LinkedList<AbstractHouse>();
+    public List<AbstractHouse> findThingForHouseByMaterial(int priceInUAH) {
+        List<AbstractHouse> thingForHouseByMaterial = new LinkedList<AbstractHouse>();
         for (AbstractHouse price : things) {
             if (price.getPriceInUAH() > priceInUAH) {
-                thingsOfWidthAndLengthInCentimeters.add(price);
+                thingForHouseByMaterial.add(price);
             }
         }
-        return thingsOfWidthAndLengthInCentimeters;
+        return thingForHouseByMaterial;
     }
 }
